@@ -10,7 +10,7 @@ Here is a step for running this app
 ```
 
 If you want run this app on local 
-# Please modify 2 ink by your link directory  
+# Please replace 2 line  by your suitable  directory  
 ```typescript
 link_bin_file = r"C:\Users\leduc\ai\data\faiss_clipv2_cosine.bin"
 json_file = r"C:\Users\leduc\ai\data\id2img_fps.json"
@@ -21,7 +21,7 @@ Finally run
 ```
 
 If you want run demo app 
-#PLEASE modify 2 lines
+#PLEASE modify 2 lines 
 ```typescript
 link_bin_file = r"C:\Users\leduc\ai\data\faiss_clipv2_cosine.bin"
 json_file = r"C:\Users\leduc\ai\data\id2img_fps.json"
