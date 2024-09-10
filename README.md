@@ -21,7 +21,8 @@ Finally run
 ```
 
 If you want run demo app 
-#PLEASE modify 2 lines 
+
+# Please modify 2 lines 
 ```typescript
 link_bin_file = r"C:\Users\leduc\ai\data\faiss_clipv2_cosine.bin"
 json_file = r"C:\Users\leduc\ai\data\id2img_fps.json"
