@@ -19,7 +19,10 @@ class textSearch:
 
     def load_bin_file(self, bin_file):
         return faiss.read_index(bin_file)
-
+    def show_image(self, link_image: str):
+        """Displays an image using OpenCV"""
+        image = cv2.imread(link_image)  # Read the image from the path
+        cv2.imshow('Retrieved Image', image) 
     def load_json_file(self, json_file):
         with open(json_file, 'r') as f:
             js = json.load(f)
@@ -44,4 +47,5 @@ class textSearch:
         idx_image = index_image.flatten()
         infos_query = [self.find_video_info(idx) for idx in idx_image]  # Ensure idx is a valid index
         link_paths= [info["image_path"] for info in infos_query]
-        return scores.flatten(), idx_image,link_paths
+        [self.show_image(link_path) for link_path in link_paths]
+        return scores.flatten(), idx_image
