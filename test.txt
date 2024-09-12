@@ -1,0 +1,29 @@
+public class Main {
+    public static void DrawSquare(int n){
+         for (int i = 1; i <= n; i++) {
+            // Inner loop for columns
+            for (int j = 1; j <= n; j++) {
+                // Print '*' when column equals row (i == j) or column equals (n - row + 1) for symmetry
+                if (j == i || j == (n - i + 1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            // Move to the next line
+            System.out.println();
+        }
+    
+    public static void main(String[] args) {
+        // Code 1
+        int num1 = 10, num2 = 20;
+        System.out.print("The addition of ");
+        System.out.println(num1 + " and " + num2 + " is:");
+        System.out.println(num1 + num2);
+
+        // Code 2
+        System.out.print(num1 + " + " + num2 + " = ");
+        //code 3
+        System.out.println(num1 + " +  num2 + =" + num1 + num2);
+    }
+}
